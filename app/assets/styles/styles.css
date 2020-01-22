@@ -1,20 +1,9 @@
-body {
-  background-color: #ccc;
-}
-
-$mainBlue: #2f5572;
-
-.large-hero {
-  height: 500px;
-  width: 800px;
-  margin: 0 auto;
-  padding: 0;
-  h2 {
-    background-color: $mainBlue;
-    color: #fff;
-    text-align: center;
-    font-weight: 45px;
-    width: auto;
-    margin-top: 100px;
-  }
-}
+@import 'normalize.css';
+@import 'base/_variables';
+@import 'base/_global';
+@import 'base/_mixins';
+@import 'modules/_large-hero';
+@import 'modules/_btn';
+@import 'modules/_wrapper';
+@import 'modules/_site-header';
+@import 'modules/_primary-nav';
