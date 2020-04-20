@@ -1,7 +1,7 @@
 {
-  "name": "postcss-starter-pack",
+  "name": "jowd-the-unknown-developer",
   "version": "1.0.0",
-  "description": "Sarter Pack postCSS using npm, webpack and various plugins",
+  "description": "julien-orjollet-portfolio-lastVersion-web-development-JOWD",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
