@@ -22,3 +22,4 @@ $accentLightColor: #e1c184;
 
 /*   rgba    */
 $selectionColor: rgba(255, 255, 158, .8);
+$selectionDarkColor: rgba(0, 0, 0, 0.728);

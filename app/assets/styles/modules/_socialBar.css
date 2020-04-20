@@ -1,0 +1,114 @@
+.socialBar {
+
+  /*  socialBar--header__icons  
+*/
+  &--header {
+    max-width: 180px;
+    margin: 15px auto;
+    padding: 0;
+
+    @mixin atSmall {
+      position: absolute;
+      margin: 0 !important;
+      top: 25px;
+      right: 15px;
+    }
+
+    &__icons {
+
+      @mixin atSmall {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  /*  socialBar--contact__icons  
+*/
+  &--contact {
+    margin: 30px auto;
+    max-width: 350px;
+
+    @mixin atSmall {
+      margin: 50px auto;
+      max-width: 700px;
+    }
+
+    &__icons {}
+  }
+
+
+
+  /*  socialBar--footer  
+*/
+  &--footer {
+    max-width: 140px;
+    margin: 5px auto;
+    padding: 0;
+
+    @mixin atSmall {
+      position: absolute;
+      margin: 0 !important;
+      bottom: 10px;
+      right: 15px;
+    }
+
+    &__icons {
+
+      @mixin atSmall {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+
+/*  socialBar_icon generic  
+  */
+.generic-socialBar {
+  display: flex;
+  justify-content: space-around;
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+
+    a>svg {
+      width: 20px;
+      height: 20px;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    /* &--small {*/
+    /* display: block;*/
+
+    &--large {
+      @mixin atSmall {
+        width: 50px;
+        height: 50px;
+      }
+
+      a>svg {
+        @mixin atSmall {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    &--gold {
+      background: $accentColor;
+    }
+  }
+}

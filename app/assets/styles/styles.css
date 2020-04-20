@@ -3,3 +3,6 @@
 @import 'base/_global';
 @import 'base/_mixins';
 @import 'modules/_site-header';
+@import 'modules/_navBar';
+@import 'modules/_socialBar';
+@import 'modules/_hero';

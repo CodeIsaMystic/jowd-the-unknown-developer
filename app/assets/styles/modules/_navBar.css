@@ -1,0 +1,48 @@
+/********************
+     navBar
+********************/
+.navBar {
+  margin: 0 auto;
+  padding-right: 40px;
+  padding-top: 0;
+  list-style: none;
+
+  @mixin atSmall {
+    padding-right: 195px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    @mixin clearfix;
+  }
+
+  & li {
+    display: inline-block;
+
+  }
+
+  & a {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    /*
+    color: rgba(0, 0, 0, .5);
+    */
+    color: $selectionDarkColor;
+    text-transform: uppercase;
+    transition: color .3s ease-out;
+    padding-left: 10px;
+
+    @mixin atSmall {
+      font-size: 13px;
+      padding-left: 27px;
+
+    }
+
+    &:hover {
+      color: $selectionDarkColor;
+    }
+
+  }
+}

@@ -1,0 +1,53 @@
+.hero {
+  padding-top: 170px;
+  @mixin clearfix;
+
+  @mixin atSmall {
+    padding-top: 295px;
+  }
+
+
+  &__title {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+    /*   test on title   */
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+    cursor: pointer;
+
+    @mixin atSmall {
+      font-size: 68px;
+      letter-spacing: 0.04em;
+    }
+
+    & span {
+      display: inline-block;
+      padding: 0.2em 0.5em;
+      border: 8px solid #fff;
+    }
+  }
+
+  &__subtitle {
+    /*   settings have moved   */
+    padding-top: 14px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 26px;
+    /*   test on subtitle   */
+    font-style: italic;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.02em;
+    color: #fff;
+    line-height: 0.9;
+
+    @mixin atSmall {
+      padding-top: 0;
+      font-size: 30px;
+      line-height: 1;
+      letter-spacing: 0.05em;
+    }
+  }
+}
