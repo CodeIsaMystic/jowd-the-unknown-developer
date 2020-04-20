@@ -4,6 +4,7 @@ const postCSSPlugins = [
   require('postcss-mixins'),
   require('postcss-simple-vars'),
   require('postcss-nested'),
+  require('postcss-hexrgba'),
   require('autoprefixer')
 ];
 
@@ -14,7 +15,7 @@ module.exports = {
     path: path.resolve(__dirname, 'app')
   },
   devServer: {
-    before: function(app, server) {
+    before: function (app, server) {
       server._watch('./app/**/*.html');
     },
     contentBase: path.join(__dirname, 'app'),
@@ -24,21 +25,15 @@ module.exports = {
   },
   mode: 'development',
   module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        use: [
-          'style-loader',
-          'css-loader?url=false',
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: postCSSPlugins
-            }
-          }
-        ]
-      }
-    ]
+    rules: [{
+      test: /\.css$/i,
+      use: ['style-loader', 'css-loader?url=false', {
+        loader: 'postcss-loader',
+        options: {
+          plugins: postCSSPlugins
+        }
+      }]
+    }]
   }
 };
 // add this short code on the rules:use:

@@ -1,7 +1,7 @@
 {
   "name": "postcss-starter-pack",
   "version": "1.0.0",
-  "description": "Building a starter pack with PostCSS , webpack , NPM , Npm Plugins",
+  "description": "Sarter Pack postCSS using npm, webpack and various plugins",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/CodeIsaMystic/PostCSS-starter-pack.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "JoWd",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CodeIsaMystic/PostCSS-starter-pack/issues"
@@ -25,6 +25,8 @@
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "css-loader": "^3.4.2",
+    "postcss-hexrgba": "^2.0.0",
+    "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-mixins": "^6.2.3",
     "postcss-nested": "^4.2.1",
