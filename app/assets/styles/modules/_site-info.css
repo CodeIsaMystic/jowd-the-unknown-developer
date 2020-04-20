@@ -1,0 +1,54 @@
+.site-info {
+  height: 100vh;
+
+
+  &__icons {
+    max-width: 780px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 15px;
+
+    @mixin atSmall {
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+
+    .item {
+      padding: 0 10px;
+
+      &>svg {
+        display: none;
+        background-color: $bgColorSecondary;
+        border-radius: 50%;
+        margin-top: 15px;
+
+        @mixin atMedium {
+          display: block;
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      &--profile {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        padding-bottom: 25px;
+
+        @mixin atSmall {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__description {
+    max-width: 620px;
+    padding: 0 15px;
+    text-align: center;
+
+    @mixin atSmall {
+      margin: 50px auto 0;
+    }
+  }
+}

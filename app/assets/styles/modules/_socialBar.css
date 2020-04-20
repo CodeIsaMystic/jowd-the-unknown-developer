@@ -1,7 +1,61 @@
 .socialBar {
 
-  /*  socialBar--header__icons  
-*/
+  /*  socialBar--alignment  */
+  &--alignment {
+    display: flex;
+    justify-content: space-around;
+
+    /*  socialBar--alignment__items  */
+    &__items {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.3);
+      }
+
+      a>svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        color: #fff;
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+
+      /*  socialBar Large !? */
+      &--large {
+        @mixin atSmall {
+          width: 50px;
+          height: 50px;
+        }
+
+        a>svg {
+          @mixin atSmall {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+
+      /*  to change class on html file  */
+      /*  socialBar--alignment--gold  */
+      &--gold {
+        background: $accentColor;
+      }
+    }
+  }
+
+
+
+
+  /*  socialBar--header 
+  */
   &--header {
     max-width: 180px;
     margin: 15px auto;
@@ -9,21 +63,31 @@
 
     @mixin atSmall {
       position: absolute;
-      margin: 0 !important;
       top: 25px;
-      right: 15px;
+      right: 45px;
+      margin: 0 !important;
     }
 
-    &__icons {
+    @mixin atMedium {
+      right: 60px;
+
+    }
+
+    &--mr {
 
       @mixin atSmall {
         margin-right: 20px;
       }
+
+      @mixin atMedium {
+        margin-right: 65px;
+      }
     }
   }
 
-  /*  socialBar--contact__icons  
-*/
+
+
+  /*  socialBar--contact */
   &--contact {
     margin: 30px auto;
     max-width: 350px;
@@ -33,13 +97,15 @@
       max-width: 700px;
     }
 
+    /* contact section ??????  
+     remove to --mr margin right  
+    */
     &__icons {}
   }
 
 
 
-  /*  socialBar--footer  
-*/
+  /*  socialBar--footer */
   &--footer {
     max-width: 140px;
     margin: 5px auto;
@@ -47,11 +113,12 @@
 
     @mixin atSmall {
       position: absolute;
-      margin: 0 !important;
       bottom: 10px;
       right: 15px;
+      margin: 0 !important;
     }
 
+    /*  remove to --mr margin right  */
     &__icons {
 
       @mixin atSmall {
@@ -62,16 +129,22 @@
 }
 
 
-/*  socialBar_icon generic  
-  */
+
+
+
+
+/*  
+    socialBar_icon generic
+
+*/
 .generic-socialBar {
   display: flex;
   justify-content: space-around;
 
   &__icon {
+    position: relative;
     width: 30px;
     height: 30px;
-    position: relative;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
 
@@ -80,14 +153,14 @@
     }
 
     a>svg {
-      width: 20px;
-      height: 20px;
-      color: #fff;
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      color: #fff;
       text-align: center;
+      transform: translate(-50%, -50%);
     }
 
     /* &--small {*/

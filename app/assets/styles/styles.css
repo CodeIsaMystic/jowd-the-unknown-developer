@@ -1,8 +1,18 @@
 @import 'normalize.css';
 @import 'base/_variables';
 @import 'base/_global';
-@import 'base/_mixins';
+@import 'base/_mixin';
 @import 'modules/_site-header';
 @import 'modules/_navBar';
 @import 'modules/_socialBar';
 @import 'modules/_hero';
+@import 'modules/_site-info';
+@import 'modules/_page-section';
+@import 'modules/_headline';
+@import 'modules/_align-items';
+@import 'modules/_generic-content';
+@import 'modules/_skills-block';
+
+
+
+

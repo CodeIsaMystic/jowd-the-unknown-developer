@@ -1,0 +1,80 @@
+.skills-block {
+  width: 360px;
+  margin: 0 auto;
+  padding-top: 100px;
+  color: #999;
+
+  @mixin clearfix;
+
+  @mixin atSmall {
+    width: 770px;
+    padding-top: 200px;
+  }
+
+  &__unit {
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+    float: left;
+
+    @mixin atSmall {
+      width: 350px;
+    }
+
+
+    &__p {
+      margin: 0;
+      padding-bottom: 3px;
+    }
+
+    &__bar {
+      margin: 0;
+      font-size: 0;
+      height: 6px;
+    }
+
+    span {
+      width: 18px;
+      height: 4px;
+
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      background-color: $accentColor;
+
+      @mixin atSmall {
+        width: 28px;
+
+      }
+    }
+
+    .skills-6 span:nth-child(n+7) {
+      background-color: $bgColorSecondary;
+    }
+
+    .skills-5 span:nth-child(n+6) {
+      background-color: $bgColorSecondary;
+    }
+
+    .skills-8 span:nth-child(n+9) {
+      background-color: $bgColorSecondary;
+    }
+
+    .skills-9 span:nth-child(n+10) {
+      background-color: $bgColorSecondary;
+    }
+
+    .skills-10 span:nth-child(n+11) {
+      background-color: $bgColorSecondary;
+    }
+  }
+
+  &--align-x {
+    padding-left: 90px;
+    margin: 0 auto;
+
+    @mixin atSmall {
+      padding-left: 70px;
+    }
+  }
+}

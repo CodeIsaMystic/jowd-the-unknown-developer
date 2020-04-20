@@ -7,10 +7,9 @@
   <meta name="description"
     content="Web developer portfolio theme... Agile, Scrum method project s management, Design and Frontend Technologies. Développeur, Intégrateur web Frontend à Lyon, France... Adepte des méthodes agiles, Scrum process!" />
 
-
   <!--  2links for 2 fonts ! NOT WHAT WE NEED  -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/styles/styles.css" />
 
   <!--    fontawesome   DO WE NEED ??? -->
@@ -20,8 +19,6 @@
 
   <!--   to check  NO NEED !????   -->
   <script src="/temp/scripts/Vendor.js"></script>
-
-
 </head>
 
 <body>
@@ -31,15 +28,16 @@
     <div class="site-header__topBar">
       <!--  logo  -->
       <div class="site-header__topBar__logo">
-        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 50 50">
-          <path fill="rgba(0, 0, 0, 0.4)"
-            d="M25 0c-13.807 0-25 11.193-25 25s11.193 25 25 25 25-11.193 25-25-11.193-25-25-25zm-6.435 43l4.599-15.033h-10.164l19.434-20.967-4.599 14.983h10.164l-19.434 21.017z" />
-        </svg>
+        <a href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 50 50">
+            <path fill="rgba(255, 255, 255, 0.35)"
+              d="M25 0c-13.807 0-25 11.193-25 25s11.193 25 25 25 25-11.193 25-25-11.193-25-25-25zm-6.435 43l4.599-15.033h-10.164l19.434-20.967-4.599 14.983h10.164l-19.434 21.017z" />
+          </svg>
+        </a>
       </div>
 
       <!--  menu  -->
-      <div class="site-header__topBar__menu">
-        <!--<nav></nav>-->
+      <nav class="site-header__topBar__menu">
         <ul class="navBar">
           <li><a href="#about" id="about-link">About</a></li>
           <li><a href="#works" id="works-link">Works</a></li>
@@ -47,54 +45,190 @@
           <li><a href="#contact" id="contact-link">Contact</a></li>
         </ul>
 
-        <div class="generic-socialBar socialBar socialBar--header">
-          <span class="socialBar--header__icons generic-socialBar__icon"><a href="#">
+        <div class="socialBar socialBar--alignment socialBar--header">
+          <span class="socialBar--alignment__items socialBar--header--mr">
+            <a href="https://twitter.com/JoWd_france" target="_blank">
               <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
                 class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512">
                 <path fill="rgba(255, 255, 255)"
                   d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
                 </path>
-              </svg></a>
+              </svg>
+            </a>
           </span>
-          <span class="socialBar--header__icons generic-socialBar__icon"><a href="#">
+          <span class="socialBar--alignment__items socialBar--header--mr">
+            <a href="https://github.com/CodeIsaMystic?tab=repositories" target="_blank">
               <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github"
                 class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 496 512">
                 <path fill="rgba(255, 255, 255)"
                   d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
                 </path>
-              </svg></a>
+              </svg>
+            </a>
           </span>
-          <span class="socialBar--header__icons generic-socialBar__icon"><a href="#">
+          <span class="socialBar--alignment__items">
+            <a href="https://www.linkedin.com/in/julien-orjollet-22984516b/" target="_blank">
               <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in"
                 class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512">
                 <path fill="rgba(255, 255, 255)"
                   d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
                 </path>
-              </svg></a>
+              </svg>
+            </a>
           </span>
         </div>
-      </div>
+      </nav>
     </div>
 
     <!--    hero  section  -->
     <div class="hero">
-      <a href="#">
-        <h1 class="hero__title"><span>jowd</span></h1>
+      <a href="#about">
+        <h1 class="hero__title"><span>.jowd</span></h1>
       </a>
       <h2 class="hero__subtitle">" The Unknown Developer... "</h2>
     </div>
-
   </header>
-
 
   <!--   MAIN   _site-main-content   -->
   <main>
+    <!--  section  about  site-info  -->
+    <section id="about" class="site-info page-section">
+      <h3 class="headline">About myself</h3>
+
+      <div class="site-info__icons align-flex">
+
+        <img src="/assets/img/profile.jpg" alt="profile-image" class="item item--profile align-flex__profile">
+
+        <div class="item align-flex__pencil">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 100 100">
+            <path fill="#c99065"
+              d="M68.495 32.622c.332-1.051-.787-2.17-1.838-1.838l-12.123 3.823-.009.003-.02.006-.04.018-.213.087-.046.031-.085.056-.189.148-.042.033-18.97 18.97-.001.001-.001.001-4.742 4.742c-.584.584-.592 1.522-.017 2.097l8.32 8.32c.575.575 1.513.567 2.097-.017l4.742-4.742 18.971-18.971.033-.042.148-.188.057-.085.03-.046.086-.212.019-.042.007-.021.003-.008 3.823-12.124zm-6.119 9.592l-3.496-1.815-1.815-3.496 7.756-2.446-2.445 7.757zm-18.081 19.01l-6.24-6.24 16.477-16.477 1.921 3.7c.07.134.158.253.262.357.105.105.224.193.357.262l3.7 1.921-16.477 16.477zm-4.742 4.742l-6.24-6.24 2.629-2.629 6.24 6.24-2.629 2.629z" />
+          </svg>
+        </div>
+        <div class="item align-flex__mouse">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 100 100">
+            <path fill="#c99065"
+              d="M49.5 74c-8.27 0-15-6.73-15-15v-18c0-8.271 6.729-15 15-15s15 6.73 15 15v18c0 8.271-6.73 15-15 15zm0-45c-6.617 0-12 5.383-12 12v18c0 6.617 5.383 12 12 12s12-5.383 12-12v-18c0-6.617-5.383-12-12-12zm.183 17.53c-2.068 0-3.75-1.681-3.75-3.75v-4.5c0-2.068 1.682-3.75 3.75-3.75s3.75 1.682 3.75 3.75v4.5c0 2.068-1.682 3.75-3.75 3.75zm0-9c-.413 0-.75.337-.75.75v4.5c0 .413.337.75.75.75s.75-.337.75-.75v-4.5c0-.413-.337-.75-.75-.75z" />
+          </svg>
+        </div>
+        <div class="item align-flex__browser">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 100 100">
+            <path fill="#c99065"
+              d="M72 30.5h-45c-.829 0-1.5.671-1.5 1.5v36c0 .829.671 1.5 1.5 1.5h45c.829 0 1.5-.671 1.5-1.5v-36c0-.829-.671-1.5-1.5-1.5zm-1.5 36h-42v-22.254h42v22.254zm0-25.254h-42v-7.746h42v7.746zm-37.153-2.495c.758 0 1.373-.615 1.373-1.373s-.615-1.373-1.373-1.373-1.373.615-1.373 1.373.615 1.373 1.373 1.373zm5.342 0c.758 0 1.373-.615 1.373-1.373s-.615-1.373-1.373-1.373-1.373.615-1.373 1.373.615 1.373 1.373 1.373zm5.342 0c.758 0 1.373-.615 1.373-1.373s-.615-1.373-1.373-1.373-1.373.615-1.373 1.373.615 1.373 1.373 1.373z" />
+          </svg>
+        </div>
+        <div class="item align-flex__video">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 100 100">
+            <path fill="#c99065"
+              d="M75 32.5h-51c-.829 0-1.5.671-1.5 1.5v32c0 .829.671 1.5 1.5 1.5h51c.829 0 1.5-.671 1.5-1.5v-32c0-.829-.671-1.5-1.5-1.5zm-1.5 32h-48v-29h48v29zm-31.007-22.995v16.988l14.004-8.494-14.004-8.494z" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="site-info__description generic-content generic-content--large">
+        <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Autem, harum architecto ratione
+          enim
+          voluptatum reprehenderit sequi corrupti Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
+          Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Excepturi vitae ducimus, nulla accusantium architecto
+          asperiores laborum impedit nesciunt distinctio alias! Excepturi vero impedit laboriosam deserunt?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae eum temporibus suscipit adipisci aperiam
+          porro?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illo reprehenderit molestiae nihil
+          exercitationem praesentium?
+          minus!laboriosam voluptates recusandae impedit quasi eum at magni!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero unde nam dolores quia expedita illum quod illo
+          recusandae ex earum? Dolorum similique laudantium a culpa sint, sequi quibusdam. Voluptate maxime similique
+          ut, hic optio inventore? Aliquid voluptates culpa quo tempora fugit nostrum placeat ullam dolor.
+        </p>
+      </div>
+    </section>
+
+    <!--  section about skills  -->
+    <section class="page-section page-section--no-p-t">
+      <div class=" skills-block skills-block--align-x">
+        <!--  skills block units  -->
+        <div class="skills-block__unit">
+
+          <p class="skills-block__unit__p">Communication</p>
+          <div class="skills-block__unit__bar skills-8">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+        </div>
+
+        <div class="skills-block__unit">
+
+          <p class="skills-block__unit__p">Organisation</p>
+          <div class="skills-block__unit__bar skills-6">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+        </div>
+
+        <div class="skills-block__unit">
+
+          <p class="skills-block__unit__p">Learning</p>
+          <div class="skills-block__unit__bar skills-10">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+        </div>
+
+        <div class="skills-block__unit">
+
+          <p class="skills-block__unit__p">Visual design</p>
+          <div class="skills-block__unit__bar skills-5">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+        </div>
+
+        <div class="skills-block__unit">
+
+          <p class="skills-block__unit__p">Team worker</p>
+          <div class="skills-block__unit__bar skills-8">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+        </div>
+
+        <div class="skills-block__unit">
+
+          <p class="skills-block__unit__p">Programming</p>
+          <div class="skills-block__unit__bar skills-5">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+        </div>
+
+        <div class="skills-block__unit">
+
+          <p class="skills-block__unit__p">Leadership</p>
+          <div class="skills-block__unit__bar skills-8">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+        </div>
+
+        <div class="skills-block__unit">
+
+          <p class="skills-block__unit__p">Thinkerview</p>
+          <div class="skills-block__unit__bar skills-9">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
 
   </main>
-
 
   <!--   FOOTER   _site-footer   -->
   <footer></footer>

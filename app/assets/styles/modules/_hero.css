@@ -1,22 +1,21 @@
 .hero {
-  padding-top: 170px;
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translateX(-50%);
   @mixin clearfix;
-
-  @mixin atSmall {
-    padding-top: 295px;
-  }
 
 
   &__title {
+
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
     text-align: center;
     font-size: 55px;
     font-weight: 700;
-    color: #fff;
-    /*   test on title   */
     text-transform: uppercase;
     letter-spacing: 0.02em;
-    margin: 0 auto;
-    cursor: pointer;
 
     @mixin atSmall {
       font-size: 68px;
@@ -31,16 +30,13 @@
   }
 
   &__subtitle {
-    /*   settings have moved   */
+    color: #fff;
     padding-top: 14px;
     text-align: center;
     font-weight: 100;
     font-size: 26px;
-    /*   test on subtitle   */
     font-style: italic;
-    /* text-transform: uppercase; */
     letter-spacing: 0.02em;
-    color: #fff;
     line-height: 0.9;
 
     @mixin atSmall {

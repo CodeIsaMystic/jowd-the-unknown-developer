@@ -1,0 +1,31 @@
+.align-flex {
+  display: block;
+  text-align: center;
+ 
+  @mixin atSmall {
+    display: flex!important;
+    align-items: center;
+    justify-content: space-around;
+
+    &__profile {
+      order: 3;
+    }
+
+    &__pencil {
+      order: 1;
+    }
+
+    &__mouse {
+      order: 2;
+    }
+
+    &__browser {
+      order: 4;
+    }
+
+    &__video {
+      order: 5;
+    }
+  } 
+  
+}

@@ -4,45 +4,48 @@
 .navBar {
   margin: 0 auto;
   padding-right: 40px;
-  padding-top: 0;
   list-style: none;
 
   @mixin atSmall {
-    padding-right: 195px;
+    padding-right: 175px;
+  }
+
+  @mixin atMedium {
+    margin-right: 220px;
+    padding-right: 0;
   }
 
   ul {
     margin: 0;
     padding: 0;
     @mixin clearfix;
+
   }
 
   & li {
     display: inline-block;
 
-  }
-
-  & a {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1;
-    /*
-    color: rgba(0, 0, 0, .5);
-    */
-    color: $selectionDarkColor;
-    text-transform: uppercase;
-    transition: color .3s ease-out;
-    padding-left: 10px;
-
-    @mixin atSmall {
-      font-size: 13px;
-      padding-left: 27px;
-
-    }
-
-    &:hover {
+    & a {
+      display: block;
+      margin-right: 10px;
+      padding: 5px;
       color: $selectionDarkColor;
-    }
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
 
+
+
+      @mixin atSmall {
+        margin-right: 30px;
+        font-size: 16px;
+      }
+
+      @mixin atMedium {
+        margin-right: 65px;
+      }
+
+    }
   }
 }

@@ -1,0 +1,16 @@
+.page-section {
+  padding: 70px 0;
+  margin: 0 auto;
+
+  @mixin atSmall {
+    padding: 90px 0;
+  }
+
+  &--gray {
+    background-color: $bgColorSecondary;
+  }
+
+  &--no-p-t {
+    padding-top: 0;
+  }
+}
